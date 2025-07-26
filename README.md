@@ -1,1 +1,1 @@
-# UniVRMMaterialExtensions
+# UniVRM Material Extensions
