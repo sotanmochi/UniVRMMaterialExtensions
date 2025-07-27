@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jp.lilxyzw.liltoon": "https://github.com/lilxyzw/lilToon.git?path=Assets/lilToon#1.8.5",
     "com.vrmc.gltf": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.128.1",
     "com.vrmc.vrm": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM10#v0.128.1",
     "com.unity.collab-proxy": "2.8.2",

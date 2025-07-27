@@ -172,6 +172,13 @@
       },
       "hash": "2911cb72a905ab7d8b0f9e03397235d1c0293714"
     },
+    "jp.lilxyzw.liltoon": {
+      "version": "https://github.com/lilxyzw/lilToon.git?path=Assets/lilToon#1.8.5",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ae6a81da053e8cd001f089fd02cc6402afab5701"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
