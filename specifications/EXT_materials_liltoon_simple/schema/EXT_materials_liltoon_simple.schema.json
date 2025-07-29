@@ -1,0 +1,873 @@
+{
+    "title": "EXT_materials_liltoon_simple",
+    "type": "object",
+    "description": "",
+    "allOf": [ { "$ref": "glTFProperty.schema.json" } ],
+    "properties": {
+      "specVersion": {
+        "type": "string",
+        "description": "Specification version of EXT_materials_liltoon_simple"
+      },
+      "extensions": { },
+      "extras": { },
+      "renderingMode": {
+        "title": "RenderingMode",
+        "type": "string",
+        "enum": [
+          "Opaque",
+          "Cutout",
+          "Transparent",
+          "FakeShadow"
+        ],
+        "default": "Opaque",
+        "description": ""
+      },
+      "transparentMode": {
+        "title": "TransparentMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "OnePass",
+          "TwoPass"
+        ],
+        "default": "Normal",
+        "description": ""
+      },
+      "renderQueue": {
+        "type": "integer",
+        "default": 2000,
+        "description": ""
+      },
+      "cutoff": {
+        "type": "number",
+        "default": 0.5,
+        "minimum": -0.001,
+        "maximum": 1.001,
+        "description": "Base Setting"
+      },
+      "cull": {
+        "title": "Cull",
+        "type": "string",
+        "enum": [
+          "Off",
+          "Front",
+          "Back"
+        ],
+        "default": "Off",
+        "description": ""
+      },
+      "invisible": {
+        "type": "boolean",
+        "default": false,
+        "description": ""
+      },
+      "zWrite": {
+        "type": "boolean",
+        "default": true,
+        "description": ""
+      },
+      "antiAliasStrength": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "useDither": {
+        "type": "boolean",
+        "default": false,
+        "description": ""
+      },
+      "ditherTex": {
+        "allOf": [ { "$ref": "textureInfo.schema.json" } ],
+        "description": ""
+      },
+      "ditherMaxValue": {
+        "type": "number",
+        "default": 255.0,
+        "description": ""
+      },
+      "lightMinLimit": {
+        "type": "number",
+        "default": 0.05,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": "Lighting Base Setting"
+      },
+      "lightMaxLimit": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 10.0,
+        "description": ""
+      },
+      "monochromeLighting": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadowEnvStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "mainColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": "Main Color"
+      },
+      "mainTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "mainTexHSVG": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "mainGradationStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "mainGradationTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "mainColorAdjustMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "alphaMaskMode": {
+        "title": "AlphaMaskMode",
+        "type": "string",
+        "enum": [
+          "None",
+          "Replace",
+          "Multiply",
+          "Add",
+          "Subtract"
+        ],
+        "default": "None",
+        "description": "Alpha Mask"
+      },
+      "alphaMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "alphaMaskScale": {
+        "type": "number",
+        "default": 1.0,
+        "description": ""
+      },
+      "alphaMaskValue": {
+        "type": "number",
+        "default": 0.0,
+        "description": ""
+      },
+      "useShadow": {
+        "type": "boolean",
+        "default": false,
+        "description": "Shadow"
+      },
+      "shadowMaskType": {
+        "title": "ShadowMaskType",
+        "type": "string",
+        "enum": [
+          "Strength",
+          "Flat",
+          "SDF"
+        ],
+        "default": "None",
+        "description": ""
+      },
+      "shadowStrength": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadowStrengthMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "shadowStrengthMaskLOD": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadowFlatBorder": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": -2.0,
+        "maximum": 2.0,
+        "description": ""
+      },
+      "shadowFlatBlur": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.001,
+        "maximum": 2.0,
+        "description": ""
+      },
+      "shadowColorType": {
+        "title": "ShadowColorType",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "LUT"
+        ],
+        "default": "Normal",
+        "description": ""
+      },
+      "shadowColor": {
+        "type": "array",
+        "items": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "minItems": 4,
+        "maxItems": 4,
+        "default":  [ 0.82, 0.76, 0.85, 1.0 ],
+        "description": ""
+      },
+      "shadowColorTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "shadowBorder": {
+        "type": "number",
+        "description": "",
+        "default": 0.5,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "shadowBlur": {
+        "type": "number",
+        "description": "",
+        "default": 0.1,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "shadowReceive": {
+        "type": "number",
+        "description": "",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "shadow2ndColor": {
+        "type": "array",
+        "items": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.68, 0.66, 0.79, 1.0 ],
+        "description": ""
+      },
+      "shadow2ndColorTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "shadow2ndBorder": {
+        "type": "number",
+        "default": 0.15,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadow2ndBlur": {
+        "type": "number",
+        "default": 0.1,
+        "minimum": 0.0,
+        "maximum": 1,
+        "description": ""
+      },
+      "shadow2ndReceive": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadow3rdColor": {
+        "type": "array",
+        "items": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 1.0 ],
+        "description": ""
+      },
+      "shadow3rdColorTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "shadowBorderColor": {
+        "type": "array",
+        "items": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "minItems": 3,
+        "maxItems": 3,
+        "default": [ 1.0, 0.1, 0.0 ],
+        "description": ""
+      },
+      "shadowBorderRange": {
+        "type": "number",
+        "default": 0.08,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "shadowMainStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "useEmission": {
+        "type": "boolean",
+        "default": false,
+        "description": "Emission"
+      },
+      "emissionColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "emissionTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "emissionTexScrollRotate": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "emissionTexUVMode": {
+        "title": "EmissionTexUVMode",
+        "type": "string",
+        "enum": [
+          "UV0",
+          "UV1",
+          "UV2",
+          "UV3",
+          "Rim"
+        ],
+        "default": "UV0",
+        "description": ""
+      },
+      "emissionMainStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "emissionBlend": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "emissionBlendMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "emissionBlendMaskScrollRotate": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "emissionBlendMode": {
+        "title": "EmissionBlendMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "Add",
+          "Screen",
+          "Multiply"
+        ],
+        "default": "Add",
+        "description": ""
+      },
+      "emissionFluorescence": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "useEmission2nd": {
+        "type": "boolean",
+        "default": false,
+        "description": ""
+      },
+      "emission2ndColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "emission2ndTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "emission2ndTexScrollRotate": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "emission2ndTexUVMode": {
+        "title": "EmissionTexUVMode",
+        "type": "string",
+        "enum": [
+          "UV0",
+          "UV1",
+          "UV2",
+          "UV3",
+          "Rim"
+        ],
+        "default": "UV0",
+        "description": ""
+      },
+      "emission2ndMainStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "emission2ndBlend": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "emission2ndBlendMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "emission2ndBlendMaskScrollRotate": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "emission2ndBlendMode": {
+        "title": "EmissionBlendMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "Add",
+          "Screen",
+          "Multiply"
+        ],
+        "default": "Add",
+        "description": ""
+      },
+      "emission2ndFluorescence": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "useNormalMap": {
+        "type": "boolean",
+        "default": false,
+        "description": "NormalMap"
+      },
+      "normalTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "normalTexScale": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": -10.0,
+        "maximum": 10.0,
+        "description": ""
+      },
+      "useNormal2ndMap": {
+        "type": "boolean",
+        "default": false,
+        "description": ""
+      },
+      "normal2ndTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "normal2ndTexUVMode": {
+        "title": "NormalTexUVMode",
+        "type": "string",
+        "enum": [
+          "UV0",
+          "UV1",
+          "UV2",
+          "UV3"
+        ],
+        "default": "UV0",
+        "description": ""
+      },
+      "normal2ndTexScale": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": -10.0,
+        "maximum": 10.0,
+        "description": ""
+      },
+      "normal2ndTexScaleMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "useMatCap": {
+        "type": "boolean",
+        "default": false,
+        "description": "MatCap"
+      },
+      "matCapColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "matCapTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "matCapBlendUV1": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "matCapZRotCancel": {
+        "type": "boolean",
+        "default": true,
+        "description": ""
+      },
+      "matCapPerspective": {
+        "type": "boolean",
+        "default": true,
+        "description": ""
+      },
+      "matCapVRParallaxStrength": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCapBlend": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCapBlendMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "matCapEnableLighting": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCapBlendMode": {
+        "title": "MatCapBlendMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "Add",
+          "Screen",
+          "Multiply"
+        ],
+        "default": "Add",
+        "description": ""
+      },
+      "useMatCap2nd": {
+        "type": "boolean",
+        "default": false,
+        "description": ""
+      },
+      "matCap2ndColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "matCap2ndTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "matCap2ndBlendUV1": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "matCap2ndZRotCancel": {
+        "type": "boolean",
+        "default": true,
+        "description": ""
+      },
+      "matCap2ndPerspective": {
+        "type": "boolean",
+        "default": true,
+        "description": ""
+      },
+      "matCap2ndVRParallaxStrength": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCap2ndBlend": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCap2ndBlendMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "matCap2ndEnableLighting": {
+        "type": "number",
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "matCap2ndBlendMode": {
+        "title": "MatCapBlendMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "Add",
+          "Screen",
+          "Multiply"
+        ],
+        "default": "Add",
+        "description": ""
+      },
+      "useRim": {
+        "type": "boolean",
+        "default": false,
+        "description": "Rim Ligth"
+      },
+      "rimColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.66, 0.5, 0.48, 1.0 ],
+        "description": ""
+      },
+      "rimColorTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "rimBorder": {
+        "type": "number",
+        "default": 0.5,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimBlur": {
+        "type": "number",
+        "default": 0.65,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimFresnelPower": {
+        "type": "number",
+        "default": 3.5,
+        "minimum": 0.01,
+        "maximum": 50,
+        "description": ""
+      },
+      "rimDirStrength": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimDirRange": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": -1.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimIndirRange": {
+        "type": "number",
+        "default": 0.0,
+        "minimum": -1.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimIndirColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 1.0, 1.0, 1.0, 1.0 ],
+        "description": ""
+      },
+      "rimIndirBorder": {
+        "type": "number",
+        "default": 0.5,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimIndirBlur": {
+        "type": "number",
+        "default": 0.1,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": ""
+      },
+      "rimBlendMode": {
+        "title": "RimBlendMode",
+        "type": "string",
+        "enum": [
+          "Normal",
+          "Add",
+          "Screen",
+          "Multiply"
+        ],
+        "default": "Add",
+        "description": ""
+      },
+      "useOutline": {
+        "type": "boolean",
+        "default": false,
+        "description": "Outline"
+      },
+      "outlineColor": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.6, 0.56, 0.73, 1.0 ],
+        "description": ""
+      },
+      "outlineTex": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      },
+      "outlineTexScrollRotate": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 4,
+        "maxItems": 4,
+        "default": [ 0.0, 0.0, 0.0, 0.0 ],
+        "description": ""
+      },
+      "outlineWidth": {
+        "type": "number",
+        "default": 0.08,
+        "minimum": 0,
+        "maximum": 1,
+        "description": ""
+      },
+      "outlineWidthMask": {
+        "allOf": [
+          { "$ref": "textureInfo.schema.json" }
+        ],
+        "description": ""
+      }
+    },
+    "required": [
+      "specVersion"
+    ]
+}
