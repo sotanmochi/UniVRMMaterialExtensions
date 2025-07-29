@@ -1,0 +1,26 @@
+{
+    "name": "VRM10.Extensions.Materials.Editor",
+    "rootNamespace": "",
+    "references": [
+        "VRM10.Extensions.Materials.lilToon",
+        "VRM10.Editor",
+        "VRM10",
+        "VrmLib",
+        "UniGLTF.Editor",
+        "UniGLTF",
+        "UniHumanoid",
+        "UniGLTF.Utils",
+        "SpringBoneJobs"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

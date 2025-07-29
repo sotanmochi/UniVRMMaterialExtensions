@@ -1,0 +1,19 @@
+{
+    "name": "VRM10.Extensions.Materials.lilToon",
+    "rootNamespace": "",
+    "references": [
+        "VRM10.Extensions.Materials",
+        "UniGLTF",
+        "VRM10",
+        "VRM10.MToon10"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
