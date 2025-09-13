@@ -212,6 +212,12 @@
       },
       "hash": "2911cb72a905ab7d8b0f9e03397235d1c0293714"
     },
+    "jp.sotanmochi.vrm.extensions.materials": {
+      "version": "file:../../../src/UniVRMMaterialExtensions/Assets/VRM10.Extensions.Materials",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
