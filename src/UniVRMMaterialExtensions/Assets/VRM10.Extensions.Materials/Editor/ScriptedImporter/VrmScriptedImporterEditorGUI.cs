@@ -1,4 +1,14 @@
-﻿using UnityEditor;
+﻿// This is a modified version of the VrmScriptedImporterEditorGUI class from UniVRM package.
+//
+// The original source code is available on GitHub.
+// https://github.com/vrm-c/UniVRM/blob/v0.128.1/Assets/VRM10/Editor/ScriptedImporter/VrmScriptedImporterEditorGUI.cs
+//
+// ---
+// Copyright (c) 2020 VRM Consortium
+// Licensed under the MIT License.
+// ---
+
+using UnityEditor;
 using UnityEngine;
 using UniGLTF;
 using System.IO;

@@ -1,3 +1,13 @@
+// This is a modified version of the Vrm10ExportDialog class from UniVRM package.
+//
+// The original source code is available on GitHub.
+// https://github.com/vrm-c/UniVRM/blob/v0.128.1/Assets/VRM10/Editor/Vrm10ExportDialog.cs
+//
+// ---
+// Copyright (c) 2020 VRM Consortium
+// Licensed under the MIT License.
+// ---
+
 using System;
 using System.Collections.Generic;
 using System.IO;

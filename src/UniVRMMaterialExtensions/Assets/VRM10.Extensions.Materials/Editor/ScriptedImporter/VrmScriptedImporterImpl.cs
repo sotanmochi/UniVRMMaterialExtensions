@@ -1,3 +1,13 @@
+// This is a modified version of the VrmScriptedImporterImpl class from UniVRM package.
+//
+// The original source code is available on GitHub.
+// https://github.com/vrm-c/UniVRM/blob/v0.128.1/Assets/VRM10/Editor/ScriptedImporter/VrmScriptedImporterImpl.cs
+//
+// ---
+// Copyright (c) 2020 VRM Consortium
+// Licensed under the MIT License.
+// ---
+
 using System.Linq;
 using UnityEngine;
 using UniGLTF;
