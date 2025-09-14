@@ -1,6 +1,6 @@
 {
     "name": "jp.sotanmochi.vrm.extensions.materials",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "displayName": "VRM10.Extensions.Materials",
     "description": "VRM Material Extensions for Unity",
     "license": "MIT",
