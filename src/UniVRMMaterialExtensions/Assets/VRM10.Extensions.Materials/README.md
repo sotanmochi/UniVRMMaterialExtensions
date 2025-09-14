@@ -67,13 +67,13 @@ Packages/manifest.jsonを直接編集してインストールすることも可�
 2. メニューから [VRM] → [Export VRM with Material Extensions] をクリックする
 3. カスタムマテリアルの情報を含むVRMファイルがエクスポートされます
 
-<img width=960 src="Docs~/Images/Export_01.png">
+<img width=960 src="Docs~/images/Export_01.png">
 
 例えば、[lilToon](https://github.com/lilxyzw/lilToon)を使っているモデルをエクスポートした場合、VRMファイルに`EXT_materials_liltoon_simple`の情報が格納される。
 
-<img width=960 src="Docs~/Images/Export_02.png">
+<img width=960 src="Docs~/images/Export_02.png">
 
-<img width=960 src="Docs~/Images/GLTF.png">
+<img width=960 src="Docs~/images/GLTF.png">
 
 ### VRMファイルのインポート（Unity Editor）
 1. VRMファイルをプロジェクトにドラッグ&ドロップする
@@ -81,17 +81,17 @@ Packages/manifest.jsonを直接編集してインストールすることも可�
 3. `Material Type`を`lilToon`に設定する
 4. `Apply`ボタンをクリックしてインポート設定を適用する
 
-<img width=960 src="Docs~/Images/ScriptedImporter_00.png">
+<img width=960 src="Docs~/images/ScriptedImporter_00.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_01.png">
+<img width=960 src="Docs~/images/ScriptedImporter_01.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_03.png">
+<img width=960 src="Docs~/images/ScriptedImporter_03.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_04.png">
+<img width=960 src="Docs~/images/ScriptedImporter_04.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_05.png">
+<img width=960 src="Docs~/images/ScriptedImporter_05.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_06.png">
+<img width=960 src="Docs~/images/ScriptedImporter_06.png">
 
 ### VRMファイルのインポート（スクリプト）
 

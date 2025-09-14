@@ -68,13 +68,13 @@ You can also install via editing Packages/manifest.json directly.
 2. Click [VRM] → [Export VRM with Material Extensions] from the menu
 3. A VRM file containing custom material information will be exported
 
-<img width=960 src="Docs~/Images/Export_01.png">
+<img width=960 src="Docs~/images/Export_01.png">
 
 For example, when exporting a model using [lilToon](https://github.com/lilxyzw/lilToon), the VRM file will contain `EXT_materials_liltoon_simple` information.
 
-<img width=960 src="Docs~/Images/Export_02.png">
+<img width=960 src="Docs~/images/Export_02.png">
 
-<img width=960 src="Docs~/Images/GLTF.png">
+<img width=960 src="Docs~/images/GLTF.png">
 
 ### Importing VRM Files (Unity Editor)
 1. Drag and drop the VRM file into your project
@@ -82,17 +82,17 @@ For example, when exporting a model using [lilToon](https://github.com/lilxyzw/l
 3. Set `Material Type` to `lilToon`
 4. Click the `Apply` button to apply the import settings
 
-<img width=960 src="Docs~/Images/ScriptedImporter_00.png">
+<img width=960 src="Docs~/images/ScriptedImporter_00.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_01.png">
+<img width=960 src="Docs~/images/ScriptedImporter_01.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_03.png">
+<img width=960 src="Docs~/images/ScriptedImporter_03.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_04.png">
+<img width=960 src="Docs~/images/ScriptedImporter_04.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_05.png">
+<img width=960 src="Docs~/images/ScriptedImporter_05.png">
 
-<img width=960 src="Docs~/Images/ScriptedImporter_06.png">
+<img width=960 src="Docs~/images/ScriptedImporter_06.png">
 
 ### Importing VRM Files (Script)
 
