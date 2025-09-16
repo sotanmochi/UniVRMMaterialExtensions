@@ -35,7 +35,8 @@ namespace UniVRM10.Extensions.Materials.lilToon
             var shader = Shader.Find(shaderName);
             if (shader == null)
             {
-                Debug.LogError($"The '{shaderName}' shader is not found. Fallback to the default shader.");
+                // Fallback to MToon or glTF material, when the shader is not found.
+                Debug.Log($"<color=orange>The '{shaderName}' shader is not found. Fallback to the default shader.</color>");
                 matDesc = default;
                 return false;
             }
