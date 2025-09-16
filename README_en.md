@@ -8,6 +8,16 @@ It enables creating and importing VRM files with material definitions that are n
 You can handle 3D character models using shaders not supported by the VRM standard in VRM-compatible applications.
 
 ## Features
+### Available Materials
+| Material / Shader | Notes |
+|---|---|
+| [lilToon](https://github.com/lilxyzw/lilToon) | Tested with v1.8.5. Only "Simple Settings" parameters are supported. |
+| MToon (URP) | UniVRM standard feature |
+| MToon (Built-in) | UniVRM standard feature |
+| Standard / URP Lit | glTF standard feature |
+
+The architecture is designed to allow for adding support for other materials (shaders) in the future.
+
 ### Exporter
 You can export VRM files containing additional material definitions.
 
@@ -18,16 +28,6 @@ Model data portability is not lost.
 
 ### Importer
 You can import VRM files containing additional material definitions.
-
-### Available Materials
-| Material / Shader | Notes |
-|---|---|
-| [lilToon](https://github.com/lilxyzw/lilToon) | Tested with v1.8.5. Only "Simple Settings" parameters are supported. |
-| MToon (URP) | UniVRM standard feature |
-| MToon (Built-in) | UniVRM standard feature |
-| Standard / URP Lit | glTF standard feature |
-
-The architecture is designed to allow for adding support for other materials (shaders) in the future.
 
 ## Use Cases
 - [Kinemagic Studio](https://youtu.be/sKyuwVir27k)
