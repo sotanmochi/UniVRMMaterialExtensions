@@ -29,7 +29,7 @@ VRM標準ではサポートされていないシェーダーを使用してい�
 追加のマテリアル定義を含むVRMファイルを読み込むことができます。  
 
 ## 採用事例
-- [Kinemagic Studio](https://youtu.be/sKyuwVir27k)
+- [Kinemagic Studio](https://kinemagicstudio.github.io/)
 
 ## 動作環境
 - Unity 2022.3以降

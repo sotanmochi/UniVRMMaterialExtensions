@@ -30,7 +30,7 @@ Model data portability is not lost.
 You can import VRM files containing additional material definitions.
 
 ## Use Cases
-- [Kinemagic Studio](https://youtu.be/sKyuwVir27k)
+- [Kinemagic Studio](https://kinemagicstudio.github.io/)
 
 ## Requirements
 - Unity 2022.3 or later
