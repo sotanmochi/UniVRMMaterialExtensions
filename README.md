@@ -123,6 +123,9 @@ namespace Sandbox
 }
 ```
 
+## 参考情報
+- [lilToonのマテリアル情報を含むVRMファイルの作成](./docs/create-vrm-with-liltoon.md)
+
 ## ライセンス情報
 - [MITライセンス](LICENSE.txt)
 - [サードパーティ通知](THIRD-PARTY-NOTICES.txt)
